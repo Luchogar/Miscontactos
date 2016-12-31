@@ -22,14 +22,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="@dimen/margin_top">
+        android:layout_marginTop="@dimen/margin_top"
+        android:onClick="llamar">
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/phone_50"
-            android:layout_gravity="center_vertical"/>
+            />
         <TextView
             android:id="@+id/tvtelefono"
             android:layout_width="wrap_content"
@@ -40,16 +41,17 @@
             android:layout_marginLeft="@dimen/margen_left"/>
 
     </LinearLayout>
-<LinearLayout
+    <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:layout_marginTop="@dimen/margin_top">
+    android:layout_marginTop="@dimen/margin_top"
+    android:onClick="enviarMail">
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/address"
-        android:layout_gravity="center_vertical"/>
+        />
     <TextView
         android:id="@+id/tvEmail"
         android:layout_width="wrap_content"
@@ -58,7 +60,7 @@
         android:layout_gravity="center_vertical"
         android:layout_marginLeft="@dimen/margen_left"
         android:textSize="@dimen/email_contacto"/>
-</LinearLayout>
+    </LinearLayout>
 
 
 </LinearLayout>
